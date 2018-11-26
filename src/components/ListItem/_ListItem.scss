@@ -1,0 +1,11 @@
+@import "../settings/settings.fonts";
+$list-item-color: #24292f !default;
+.list-item {
+	opacity: 0.5;
+	color: $list-item-color;
+	font-family: $font-proxima-nova;
+	font-weight: 400;
+	line-height: 91px;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+}
