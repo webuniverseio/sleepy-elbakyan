@@ -1,47 +1,53 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-  "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-  sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+/*
+This is how css architecture is organized https://github.com/inuitcss/inuitcss
+For naming convention we use BEM.
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-  monospace;
-}
+/settings: Global variables, site-wide settings, config switches, etc.
+/tools: Site-wide mixins and functions.
+/generic: Low-specificity, far-reaching rulesets (e.g. resets).
+/elements: Unclassed HTML elements (e.g. a {}, blockquote {}, address {}).
+/objects: Objects, abstractions, and design patterns (e.g. .o-layout {}).
+/components: Discrete, complete chunks of UI (e.g. .c-carousel {}). This is the one layer that inuitcss doesn’t provide code for, as this is completely your terrain.
+/utilities: High-specificity, very explicit selectors. Overrides and helper classes (e.g. .u-hidden {}).
+*/
 
-.App {
-  text-align: center;
-}
+// SETTINGS
+@import "components/settings/settings.global";
+@import "components/settings/settings.fonts";
+@import "components/settings/settings.colors";
+@import "~inuitcss/settings/settings.core";
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
+// TOOLS
+@import "~inuitcss/tools/tools.clearfix";
+@import "~inuitcss/tools/tools.font-size";
+/*@import "node_modules/sass-mq/mq";
+@import "tools/tools.aliases";*/
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+// GENERIC
+@import '~normalize.css/normalize';
+@import "~inuitcss/generic/generic.box-sizing";
+@import "~inuitcss/generic/generic.shared";
+@import "components/generic/generic.fonts";
 
-.App-link {
-  color: #61dafb;
-}
+// ELEMENTS
+@import "~inuitcss/elements/elements.page";
+@import "~inuitcss/elements/elements.headings";
+@import "components/elements/elements.body";
+/*@import "elements/elements.links";*/
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+// OBJECTS
+@import "~inuitcss/objects/objects.media";
+@import "~inuitcss/objects/objects.flag";
+@import "~inuitcss/objects/objects.list-bare";
+@import "~inuitcss/objects/objects.list-inline";
+@import "~inuitcss/objects/objects.box";
+@import "~inuitcss/objects/objects.block";
+@import "~inuitcss/objects/objects.table";
+
+// COMPONENTS
+@import "components/ListItem/ListItem.scss";
+
+// UTILITIES
+@import "~inuitcss/utilities/utilities.widths";
+@import "~inuitcss/utilities/utilities.headings";
+@import "~inuitcss/utilities/utilities.spacings";
