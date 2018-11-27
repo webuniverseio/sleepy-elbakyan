@@ -10,9 +10,11 @@ const filterTypes = {
 const getCar = () => ({
   year: [2008, 2011, 2014, 2014, 2014, 2010, 2011][_.random(6)],
   status: _(filterTypes).omit('All').keys().value()[_.random(2)],
-  bitType: ['eBlock ON & QC', 'ESP Direct Montreal'][_.random(1)],
+  bidType: ['eBlock ON & QC', 'ESP Direct Montreal'][_.random(1)],
   type: ['Honda Civic', 'GMC Sierra', 'Ford F-150', 'Chevrolet Equinox', 'Ford Escape', 'Ford Edge', 'Lincoln MKX'][_.random(6)],
-  lane: ['A', 'B', 'C', 'D'][_.random(3)]
+  lane: ['A', 'B', 'C', 'D'][_.random(3)],
+  remaining: _.random(210),
+  watching: [_.random(1, 4), 0, 0][_.random(2)]
 });
 
 export default {
@@ -65,5 +67,5 @@ export default {
     picturePath: 'https://picsum.photos/28/28',
     name: 'John Doe'
   },
-  laneData: Array(_.random(5, 20)).fill(getCar)
+  laneData: Array(_.random(5, 20)).fill(undefined).map(getCar)
 };

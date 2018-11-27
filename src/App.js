@@ -1,8 +1,9 @@
 import React, {Component, Fragment} from 'react';
+import {Route, Redirect} from 'react-router-dom';
 import './App.scss';
 import TopNav from "./components/TopBar/TopBar";
 import SubNav from "./components/SubNav/SubNav";
-import {Route, Redirect} from 'react-router-dom';
+import SideBar from "./components/SideBar/SideBar";
 
 class App extends Component {
   render() {
@@ -11,6 +12,7 @@ class App extends Component {
       <Route path="/buy" exact={true} component={() => <Redirect to={'/buy/live-lanes'} />} />
       <TopNav />
       <SubNav />
+      <SideBar />
     </Fragment>;
   }
 }
