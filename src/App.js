@@ -7,10 +7,10 @@ import {Route, Redirect} from 'react-router-dom';
 class App extends Component {
   render() {
     return <Fragment>
-      <TopNav />
       <Route path="/" exact={true} component={() => <Redirect to={'/buy/live-lanes'} />} />
       <Route path="/buy" exact={true} component={() => <Redirect to={'/buy/live-lanes'} />} />
-      <Route path="/:path" component={() => <SubNav />} />
+      <TopNav />
+      <SubNav />
     </Fragment>;
   }
 }
