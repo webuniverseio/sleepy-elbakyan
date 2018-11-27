@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 export default class NavItemIcon extends PureComponent {
   render() {
     const {src, alt} = this.props;
-    return <img {...{src}} alt={alt} className={'list-item__icon'} />;
+    return <img {...{src}} alt={alt} className={'nav-item__icon'} />;
   }
 };
 NavItemIcon.propTypes = {

@@ -16,6 +16,11 @@ const getCar = () => ({
 });
 
 export default {
+  appData: {
+    homePage: '/',
+    siteName: 'EBlock',
+    logoPath: '/logo.png'
+  },
   menu: [
     {
       href: '/buy',
@@ -24,16 +29,16 @@ export default {
       children: [
         {
           text: 'UPCOMING',
-          href: '/upcoming'
+          href: '/buy/upcoming'
         }, {
           text: 'LIVE APPRAISALS',
-          href: '/live-appraisals'
+          href: '/buy/live-appraisals'
         }, {
           text: 'LIVE 24H AUCTIONS',
-          href: '/live-24h-auctions'
+          href: '/buy/live-24h-auctions'
         }, {
           text: 'LIVE LANES',
-          href: '/live-lanes'
+          href: '/buy/live-lanes'
         }
       ],
     },
@@ -57,7 +62,8 @@ export default {
     },
   ],
   user: {
-    picture: 'https://loremflickr.com/34/34/person'
+    picturePath: 'https://picsum.photos/28/28',
+    name: 'John Doe'
   },
   laneData: Array(_.random(5, 20)).fill(getCar)
 };

@@ -12,6 +12,8 @@ For naming convention we use BEM.
 */
 
 // SETTINGS
+$inuit-global-font-size: 10px;
+$inuit-global-line-height: 15px;
 @import "components/settings/settings.global";
 @import "components/settings/settings.fonts";
 @import "components/settings/settings.colors";
@@ -46,9 +48,15 @@ For naming convention we use BEM.
 @import "~inuitcss/objects/objects.table";*/
 
 // COMPONENTS
+#root {
+	min-width: 900px;
+}
 @import "components/NavItem/components.NavItem";
 @import "components/TopBar/components.TopBar";
 @import "components/Nav/components.Nav";
+@import "components/Logo/components.Logo";
+@import "components/UserProfile/components.UserProfile";
+@import "components/SubNav/components.SubNav";
 
 // UTILITIES
 @import "~inuitcss/utilities/utilities.widths";

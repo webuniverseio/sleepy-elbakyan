@@ -1,27 +1,49 @@
 @import "../settings/settings.fonts";
-$list-item-color: #24292f !default;
-$list-item-color--alt: #fff !default;
+$nav-item-color: #919497 !default;
+$nav-item-active-color: #2c8ed9 !default;
+$nav-item-color--alt: #707478 !default;
 
-.list-item,
-[class^="list-item--"],
-[class*=" list-item--"] {
-	opacity: 0.5;
-	color: $list-item-color;
+.nav-item,
+[class^="nav-item--"],
+[class*=" nav-item--"] {
+	position: relative;
+	display: flex;
+	color: $nav-item-color;
 	font-family: $font-proxima-nova;
 	font-weight: 400;
 	text-transform: uppercase;
 	letter-spacing: 1.5px;
-	display: flex;
 	text-decoration: none;
 
 	& + & {
 		margin-left: 45px;
 	}
+
+	&.active {
+		color: $nav-item-active-color;
+	}
 }
-.list-item--alt {
-	opacity: 0.4;
-	color: $list-item-color--alt;
+.nav-item--alt {
+	color: $nav-item-color--alt;
+
+	&.active {
+		color: $nav-item-color--alt;
+
+		&::after {
+			content: '';
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+			bottom: -17px;
+			width: 0;
+			height: 0;
+			border-top: 0;
+			border-left: 8px solid transparent;
+			border-right: 8px solid transparent;
+			border-bottom: 8px solid #fff;
+		}
+	}
 }
-.list-item__icon {
+.nav-item__icon {
 	margin-right: 16px;
 }

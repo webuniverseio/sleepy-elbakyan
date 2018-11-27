@@ -1,5 +1,24 @@
 $top-bar-bg: #24292f !default;
 .top-bar {
-	background-color: $top-bar-bg;
 	padding: 0 22px;
+	display: flex;
+	justify-content: space-between;
+	height: 53px;
+	background-color: $top-bar-bg;
+}
+.top-bar__item {
+	display: flex;
+}
+.top-bar__logo {
+	display: flex;
+	align-items: center;
+}
+.top-bar__nav {
+	.top-bar__logo + & {
+		margin-left: 55px;
+	}
+}
+.top-bar__user-profile {
+	display: flex;
+	align-items: center;
 }

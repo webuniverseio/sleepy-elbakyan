@@ -1,12 +1,13 @@
 import React, {PureComponent} from 'react';
 import PropTypes from 'prop-types';
+import {NavLink} from 'react-router-dom';
 
 export default class NavItem extends PureComponent {
   render() {
     const {children, type, href} = this.props;
-    return <a href={href} className={`list-item${type ? `--${type}`: ''}`}>
+    return <NavLink to={href} className={`nav-item${type ? `--${type}`: ''}`}>
       {children}
-    </a>;
+    </NavLink>;
   }
 };
 NavItem.types = {

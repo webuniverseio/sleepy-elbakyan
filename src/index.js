@@ -4,12 +4,16 @@ import {Provider} from 'react-redux'
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import {createStore} from 'redux';
+import {BrowserRouter as Router} from 'react-router-dom';
 import fakeData from "./helpers/fakeData";
+
 const store = createStore(x => x, fakeData);
 
 render(
   <Provider store={store}>
-    <App/>
+    <Router>
+      <App/>
+    </Router>
   </Provider>,
   document.getElementById('root')
 );
