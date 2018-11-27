@@ -1,0 +1,22 @@
+@mixin a11y-off-screen() {
+	position: absolute;
+	left: -10000px;
+	top: auto;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
+
+.o-a11y__element {
+	@include a11y-off-screen();
+}
+
+.o-a11y__skip {
+	@include a11y-off-screen();
+
+	&:focus {
+		position: static;
+		width: auto;
+		height: auto;
+	}
+}

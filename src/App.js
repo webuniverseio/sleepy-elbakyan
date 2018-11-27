@@ -1,17 +1,10 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import './App.scss';
-import ListItem from './components/ListItem/ListItem';
-import ListItemIcon from './components/ListItem/ListItemIcon';
-import { ReactComponent as ListSVG } from './components/icons/list-icon.svg';
+import TopNav from "./components/TopBar/TopBar";
 
 class App extends Component {
   render() {
-    return <ListItem>
-      <ListItemIcon>
-        <ListSVG />
-      </ListItemIcon>
-      Hello
-    </ListItem>;
+    return <TopNav />;
   }
 }
 

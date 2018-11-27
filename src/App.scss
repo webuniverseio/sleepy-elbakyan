@@ -7,7 +7,7 @@ For naming convention we use BEM.
 /generic: Low-specificity, far-reaching rulesets (e.g. resets).
 /elements: Unclassed HTML elements (e.g. a {}, blockquote {}, address {}).
 /objects: Objects, abstractions, and design patterns (e.g. .o-layout {}).
-/components: Discrete, complete chunks of UI (e.g. .c-carousel {}). This is the one layer that inuitcss doesn’t provide code for, as this is completely your terrain.
+/components: Discrete, complete chunks of UI (e.g. .carousel {}). This is the one layer that inuitcss doesn’t provide code for, as this is completely your terrain.
 /utilities: High-specificity, very explicit selectors. Overrides and helper classes (e.g. .u-hidden {}).
 */
 
@@ -36,16 +36,19 @@ For naming convention we use BEM.
 /*@import "elements/elements.links";*/
 
 // OBJECTS
-@import "~inuitcss/objects/objects.media";
+@import "components/objects/objects.a11y";
+/*@import "~inuitcss/objects/objects.media";
 @import "~inuitcss/objects/objects.flag";
 @import "~inuitcss/objects/objects.list-bare";
 @import "~inuitcss/objects/objects.list-inline";
 @import "~inuitcss/objects/objects.box";
 @import "~inuitcss/objects/objects.block";
-@import "~inuitcss/objects/objects.table";
+@import "~inuitcss/objects/objects.table";*/
 
 // COMPONENTS
-@import "components/ListItem/ListItem.scss";
+@import "components/ListItem/components.ListItem";
+@import "components/TopBar/components.TopBar";
+@import "components/Nav/components.Nav";
 
 // UTILITIES
 @import "~inuitcss/utilities/utilities.widths";

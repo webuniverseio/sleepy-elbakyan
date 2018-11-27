@@ -20,6 +20,7 @@ export default {
     {
       href: '/buy',
       text: 'BUY',
+      iconPath: '/icons/list-icon.svg',
       children: [
         {
           text: 'UPCOMING',
@@ -39,16 +40,19 @@ export default {
     {
       href: '/sell',
       text: 'SELL',
+      iconPath: '/icons/car-icon.svg',
       children: [],
     },
     {
       href: '/pending',
       text: 'PENDING',
+      iconPath: '/icons/timer-icon.svg',
       children: [],
     },
     {
       href: '/finished',
       text: 'FINISHED',
+      iconPath: '/icons/gear-icon.svg',
       children: [],
     },
   ],

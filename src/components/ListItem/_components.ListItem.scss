@@ -1,13 +1,24 @@
 @import "../settings/settings.fonts";
 $list-item-color: #24292f !default;
-.list-item {
+$list-item-color--alt: #fff !default;
+
+.list-item,
+[class^="list-item--"],
+[class*=" list-item--"] {
 	opacity: 0.5;
 	color: $list-item-color;
 	font-family: $font-proxima-nova;
 	font-weight: 400;
-	line-height: 91px;
 	text-transform: uppercase;
 	letter-spacing: 1.5px;
+
+	& + & {
+		margin-left: 45px;
+	}
+}
+.list-item--alt {
+	opacity: 0.4;
+	color: $list-item-color--alt;
 }
 .list-item__icon {
 	margin-right: 16px;
