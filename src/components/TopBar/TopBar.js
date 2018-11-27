@@ -1,6 +1,6 @@
 import React, {PureComponent} from 'react';
-import ListItem from "../ListItem/ListItem";
-import ListItemIcon from "../ListItem/ListItemIcon";
+import NavItem from "../NavItem/NavItem";
+import ListItemIcon from "../NavItem/NavItemIcon";
 import {connect} from "react-redux";
 import Nav from "../Nav/Nav";
 
@@ -9,10 +9,11 @@ class TopBar extends PureComponent {
     const {menu} = this.props;
     return <div className="top-bar">
       <Nav a11yText={'Primary navigation'}>
-        {menu.map(x => <ListItem type={ListItem.types.alt}>
-          <ListItemIcon src={x.iconPath} alt={x.text} />
-          {x.text}
-        </ListItem>)}
+        {menu.map(x =>
+          <NavItem type={NavItem.types.alt} href={x.href}>
+            <ListItemIcon src={x.iconPath} alt={x.text}/>
+            {x.text}
+          </NavItem>)}
       </Nav>
       {/*<h1>E-Block</h1>
       <nav>
@@ -29,6 +30,7 @@ class TopBar extends PureComponent {
     </div>;
   }
 }
+
 export default connect(
   ({menu}) => ({menu})
 )(TopBar);
