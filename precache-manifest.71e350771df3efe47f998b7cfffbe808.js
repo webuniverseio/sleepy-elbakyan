@@ -24,19 +24,19 @@ self.__precacheManifest = [
     "url": "/sleepy-elbakyan/static/js/runtime~main.528c543f.js"
   },
   {
-    "revision": "5c74edab6b28f52abad0",
-    "url": "/sleepy-elbakyan/static/js/main.5c74edab.chunk.js"
+    "revision": "dc76a195846495781c8c",
+    "url": "/sleepy-elbakyan/static/js/main.dc76a195.chunk.js"
   },
   {
     "revision": "af1053066234dffb3502",
     "url": "/sleepy-elbakyan/static/js/1.af105306.chunk.js"
   },
   {
-    "revision": "5c74edab6b28f52abad0",
+    "revision": "dc76a195846495781c8c",
     "url": "/sleepy-elbakyan/static/css/main.2261b45a.chunk.css"
   },
   {
-    "revision": "b1870fa4f83d13b57f020f663f2d64d9",
+    "revision": "dee2ae447eabfc61b0c0d82edbb50b88",
     "url": "/sleepy-elbakyan/index.html"
   }
 ];
