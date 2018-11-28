@@ -1,7 +1,7 @@
 {
   "main.css": "/sleepy-elbakyan/static/css/main.2261b45a.chunk.css",
-  "main.js": "/sleepy-elbakyan/static/js/main.dc76a195.chunk.js",
-  "main.js.map": "/sleepy-elbakyan/static/js/main.dc76a195.chunk.js.map",
+  "main.js": "/sleepy-elbakyan/static/js/main.2ad3e787.chunk.js",
+  "main.js.map": "/sleepy-elbakyan/static/js/main.2ad3e787.chunk.js.map",
   "static/js/1.af105306.chunk.js": "/sleepy-elbakyan/static/js/1.af105306.chunk.js",
   "static/js/1.af105306.chunk.js.map": "/sleepy-elbakyan/static/js/1.af105306.chunk.js.map",
   "runtime~main.js": "/sleepy-elbakyan/static/js/runtime~main.528c543f.js",
@@ -10,6 +10,6 @@
   "static/media/search.1e857af3.svg": "/sleepy-elbakyan/static/media/search.1e857af3.svg",
   "static/css/main.2261b45a.chunk.css.map": "/sleepy-elbakyan/static/css/main.2261b45a.chunk.css.map",
   "index.html": "/sleepy-elbakyan/index.html",
-  "precache-manifest.71e350771df3efe47f998b7cfffbe808.js": "/sleepy-elbakyan/precache-manifest.71e350771df3efe47f998b7cfffbe808.js",
+  "precache-manifest.df4cdc3339cc5af8d7c703842d02bc6f.js": "/sleepy-elbakyan/precache-manifest.df4cdc3339cc5af8d7c703842d02bc6f.js",
   "service-worker.js": "/sleepy-elbakyan/service-worker.js"
 }
