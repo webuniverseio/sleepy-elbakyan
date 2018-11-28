@@ -20,49 +20,50 @@ const getCar = () => {
   });
 };
 
+const basePath = process.env.NODE_ENV === 'production' ? '/sleepy-elbakyan' : `/`;
 export default {
   appData: {
-    homePage: '/',
+    homePage: `${basePath}`,
     siteName: 'EBlock',
-    logoPath: '/logo.png'
+    logoPath: `${basePath}logo.png`
   },
   menu: [
     {
-      href: '/buy',
+      href: `${basePath}buy`,
       text: 'BUY',
-      iconPath: '/icons/list-icon.svg',
+      iconPath: `${basePath}icons/list-icon.svg`,
       children: [
         {
           text: 'UPCOMING',
-          href: '/buy/upcoming'
+          href: `${basePath}buy/upcoming`
         }, {
           text: 'LIVE APPRAISALS',
-          href: '/buy/live-appraisals'
+          href: `${basePath}buy/live-appraisals`
         }, {
           text: 'LIVE 24H AUCTIONS',
-          href: '/buy/live-24h-auctions'
+          href: `${basePath}buy/live-24h-auctions`
         }, {
           text: 'LIVE LANES',
-          href: '/buy/live-lanes'
+          href: `${basePath}buy/live-lanes`
         }
       ],
     },
     {
-      href: '/sell',
+      href: `${basePath}sell`,
       text: 'SELL',
-      iconPath: '/icons/car-icon.svg',
+      iconPath: `${basePath}icons/car-icon.svg`,
       children: [],
     },
     {
-      href: '/pending',
+      href: `${basePath}pending`,
       text: 'PENDING',
-      iconPath: '/icons/timer-icon.svg',
+      iconPath: `${basePath}icons/timer-icon.svg`,
       children: [],
     },
     {
-      href: '/finished',
+      href: `${basePath}finished`,
       text: 'FINISHED',
-      iconPath: '/icons/gear-icon.svg',
+      iconPath: `${basePath}icons/gear-icon.svg`,
       children: [],
     },
   ],

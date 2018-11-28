@@ -1,8 +1,12 @@
 {
+  "homepage": "http://szarouski.github.io/sleepy-elbakyan",
   "name": "sample-site",
   "version": "0.1.0",
   "private": true,
+  "predeploy": "yarn run build",
+  "deploy": "gh-pages -d build",
   "dependencies": {
+    "gh-pages": "^2.0.1",
     "inuitcss": "^6.0.0",
     "lodash": "^4.17.11",
     "node-sass": "^4.10.0",
@@ -20,7 +24,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"

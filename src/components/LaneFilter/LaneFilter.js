@@ -1,4 +1,4 @@
-import React, {PureComponent, Fragment} from 'react';
+import React, {PureComponent} from 'react';
 import PropTypes from 'prop-types';
 import _ from 'lodash';
 import {ReactComponent as Search} from "../icons/search.svg";
@@ -22,7 +22,7 @@ export default class LaneFilter extends PureComponent {
           .entries()
           .sort()
           .map(([type, entries]) =>
-            <button type={'button'} className={'lane-filter__tab'} onClick={() => alert(`Show ${type}`)}>
+            <button type={'button'} className={'lane-filter__tab'} onClick={() => alert(`Show ${type}`)} key={type}>
               {type}
               <span className={`lane-filter__tab-number--${type.toLowerCase()}`}>
                 {entries.length}

@@ -10,6 +10,7 @@ class App extends Component {
   render() {
     return <Fragment>
       <Route path="/" exact={true} component={() => <Redirect to={'/buy/live-lanes'} />} />
+      <Route path="/sleepy-elbakyan" exact={true} component={() => <Redirect to={'/buy/live-lanes'} />} />
       <Route path="/buy" exact={true} component={() => <Redirect to={'/buy/live-lanes'} />} />
       <TopNav />
       <SubNav />
