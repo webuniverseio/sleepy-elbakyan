@@ -20,7 +20,7 @@ const getCar = () => {
   });
 };
 
-const basePath = process.env.NODE_ENV === 'production' ? '/sleepy-elbakyan' : `/`;
+const basePath = process.env.NODE_ENV === 'production' ? '/sleepy-elbakyan/' : `/`;
 export default {
   appData: {
     homePage: `${basePath}`,
