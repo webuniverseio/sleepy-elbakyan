@@ -1,4 +1,3 @@
-@import "../settings/settings.fonts";
 $nav-item-color: #919497 !default;
 $nav-item-active-color: #2c8ed9 !default;
 $nav-item-color--alt: #707478 !default;
@@ -9,8 +8,6 @@ $nav-item-color--alt: #707478 !default;
 	position: relative;
 	display: flex;
 	color: $nav-item-color;
-	font-family: $font-proxima-nova;
-	font-weight: 400;
 	text-transform: uppercase;
 	letter-spacing: 1.5px;
 	text-decoration: none;
