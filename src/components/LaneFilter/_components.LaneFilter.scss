@@ -1,0 +1,131 @@
+$lane-filter__entry-alt-color: #1abb99 !default;
+$lane-filter__entry-primary-color: #24292f !default;
+$lane-filter__border-color: #edeeef !default;
+
+.lane-filter {}
+
+.lane-filter__entry,
+[class^="lane-filter__entry--"],
+[class*=" lane-filter__entry--"] {
+	font-size: 1.3rem;
+	border-bottom: 1px solid $lane-filter__border-color;
+}
+.lane-filter__entry--winning {
+	background-color: #f6fffd;
+}
+.lane-filter__entry-button {
+	padding: 15px 22px;
+	width: 100%;
+	background: none;
+	border: 0;
+	text-align: left;
+	line-height: inherit;
+	cursor: pointer;
+}
+.lane-filter__entry-lane {
+	color: $lane-filter__entry-alt-color;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+}
+.lane-filter__bid-type {
+	opacity: 0.5;
+	color: $lane-filter__entry-primary-color;
+	font-weight: 300;
+	font-style: normal;
+
+	.lane-filter__entry-lane + &::before {
+		content: '';
+		width: 4px;
+		height: 4px;
+		display: inline-block;
+		margin: 0 10px;
+		background-color: $lane-filter__border-color;
+		vertical-align: middle;
+	}
+}
+
+.lane-filter__car-info {
+	color: $lane-filter__entry-primary-color;
+}
+
+.lane-filter__remaining {
+	opacity: 0.5;
+	font-weight: 300;
+	color: $lane-filter__entry-primary-color;
+}
+
+.lane-filter__watching {
+	font-weight: 300;
+	color: #f6b551;
+}
+
+
+.lane-filter__manage {
+	padding: 15px 22px;
+	border-bottom: 1px solid $lane-filter__border-color;
+}
+
+.lane-filter__search-box {
+	position: relative;
+}
+.lane-filter__search {
+	width: 100%;
+	height: 36px;
+	padding: 13px 13px * 3 13px 13px;
+	border-radius: 5px;
+	border: 1px solid #d3d3d3;
+	font-size: 1.3rem;
+	font-weight: 300;
+
+	&:focus {
+		border-color: $lane-filter__entry-primary-color;
+		outline: 0;
+	}
+	&::placeholder {
+		color: #c7c8c9;
+	}
+}
+.lane-filter__search-button {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	background: none;
+	border: 0;
+	padding: 6px;
+	cursor: pointer;
+}
+
+.lane-filter__tabs {
+	display: flex;
+	justify-content: space-between;
+
+	.lane-filter__search-box + & {
+		margin-top: 1em;
+	}
+}
+.lane-filter__tab {
+	padding: 0;
+	border: 0;
+	background: none;
+	color: rgba($lane-filter__entry-primary-color, 0.5);
+	font-size: 1rem;
+	text-transform: uppercase;
+	letter-spacing: 1.2px;
+	cursor: pointer;
+}
+.lane-filter__tab-number,
+[class^="lane-filter__tab-number--"],
+[class*=" lane-filter__tab-number--"]{
+	margin-left: 5px;
+	padding: 5px;
+	border-radius: 5px;
+	color: #ffffff;
+	text-transform: uppercase;
+	background-color: #d3d3d3;
+}
+.lane-filter__tab-number--outbid {
+	background-color: #e76f67;
+}
+.lane-filter__tab-number--winning {
+	background-color: $lane-filter__entry-alt-color;
+}

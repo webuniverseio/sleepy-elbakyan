@@ -4,6 +4,12 @@
 	font-family: $font-proxima-nova;
 	src: url('./components/generic/ProximaNova-Semibold.woff2') format("woff2"),
 	url('./components/generic/ProximaNova-Semibold.woff') format("woff");
-	font-weight: 400;
+	font-display: swap;
+}
+@font-face {
+	font-family: $font-proxima-nova;
+	src: url('./components/generic/ProximaNova-Regular.woff2') format("woff2"),
+			 url('./components/generic/ProximaNova-Regular.woff') format("woff");
+	font-weight: 300;
 	font-display: swap;
 }
