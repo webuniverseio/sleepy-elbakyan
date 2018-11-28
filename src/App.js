@@ -4,6 +4,7 @@ import './App.scss';
 import TopNav from "./components/TopBar/TopBar";
 import SubNav from "./components/SubNav/SubNav";
 import SideBar from "./components/SideBar/SideBar";
+import Content from "./components/Content/Content"
 
 class App extends Component {
   render() {
@@ -12,7 +13,10 @@ class App extends Component {
       <Route path="/buy" exact={true} component={() => <Redirect to={'/buy/live-lanes'} />} />
       <TopNav />
       <SubNav />
-      <SideBar />
+      <main>
+        <SideBar />
+        <Content />
+      </main>
     </Fragment>;
   }
 }

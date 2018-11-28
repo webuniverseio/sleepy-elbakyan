@@ -51,6 +51,9 @@ $inuit-global-line-height: 15px;
 #root {
 	min-width: 900px;
 }
+main {
+	display: flex;
+}
 @import "components/NavItem/components.NavItem";
 @import "components/TopBar/components.TopBar";
 @import "components/Nav/components.Nav";
