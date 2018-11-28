@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/sleepy-elbakyan/precache-manifest.d186e6b03b8934c316c03bf2655bfed3.js"
+  "/sleepy-elbakyan/precache-manifest.81361c061d00000dfd24763fd9ce5c32.js"
 );
 
 workbox.clientsClaim();
