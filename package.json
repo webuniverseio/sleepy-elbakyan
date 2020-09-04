@@ -9,7 +9,7 @@
     "gh-pages": "^2.0.1",
     "inuitcss": "^6.0.0",
     "lodash": "^4.17.11",
-    "node-sass": "^4.10.0",
+    "node-sass": "^4.13.1",
     "normalize.css": "^8.0.1",
     "prop-types": "^15.6.2",
     "react": "^16.6.3",
