@@ -8,7 +8,7 @@
   "dependencies": {
     "gh-pages": "^2.0.1",
     "inuitcss": "^6.0.0",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.21",
     "node-sass": "^4.10.0",
     "normalize.css": "^8.0.1",
     "prop-types": "^15.6.2",
